@@ -4,13 +4,12 @@ import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { Input } from "./ui/input";
 import { Mail, MapPin, Phone, User } from "lucide-react";
-import { TypingText } from "./typingtext";
 import { motion } from "motion/react";
 import { fadeIn, staggerContainer } from "@/utils/motion";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 lg:py-28 z-50">
+    <section id="contact" className="z-50 pb-20">
       <motion.div
         variants={staggerContainer(0.1, 0.2)}
         initial="hidden"
@@ -18,7 +17,7 @@ const Contact = () => {
         viewport={{ once: true }}
         className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 z-50"
       >
-        <p className="font-medium text-[24px] text-secondary-white py-8 text-center dark:text-neutral-200">
+        <p className="font-medium text-[18px] lg:text-[24px] text-secondary-white py-8 text-center dark:text-neutral-200">
           | Contact Radify Solutions
         </p>
         <motion.div

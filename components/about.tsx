@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import { TypingText } from "./typingtext";
 import { fadeIn, staggerContainer } from "../utils/motion";
 
 const About = () => {
@@ -13,7 +12,7 @@ const About = () => {
         viewport={{ once: true }}
         className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8"
       >
-        <p className="font-medium text-[24px] text-secondary-white py-8 text-center dark:text-neutral-200">| About Radify Solutions</p>
+        <p className="font-medium text-[18px] lg:text-[24px] text-secondary-white py-8 text-center dark:text-neutral-200">| About Radify Solutions</p>
         <motion.p
           variants={fadeIn("up", "tween", 0.2, 1)}
           viewport={{ once: true }}
@@ -22,7 +21,7 @@ const About = () => {
           At
           <span
             data-type="norwegian"
-            className="font-extrabold bg-gradient-to-r from-[#ac3fab] via-[#bc76bb] to-[#c30dc0] bg-clip-text text-transparent interactable"
+            className="font-extrabold bg-gradient-to-r from-[#ac3fab] via-[#bc76bb] to-[#c30dc0] bg-clip-text text-transparent"
           >
             {" "}
             Radify Lighting
@@ -30,7 +29,7 @@ const About = () => {
           , we are dedicated to powering brilliance and
           <span
             data-type="arted"
-            className="font-extrabold bg-gradient-to-l from-[#ac3fab] via-[#bc76bb] to-[#c30dc0] bg-clip-text text-transparent interactable"
+            className="font-extrabold bg-gradient-to-l from-[#ac3fab] via-[#bc76bb] to-[#c30dc0] bg-clip-text text-transparent"
           >
             {" "}
             illuminating spaces{" "}
